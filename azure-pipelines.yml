@@ -7,4 +7,4 @@ steps:
   - task: PowerShell@2
     inputs:
       scriptPath: procedure_update.sh
-    arguments: $(PASSWORD)
+    arguments: $(password)
