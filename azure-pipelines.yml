@@ -1,0 +1,10 @@
+---
+trigger:
+  - Procedure update
+pool:
+  vmImage: ubuntu-latest
+steps:
+  - task: PowerShell@2
+    inputs:
+      scriptPath: procedure_update.sh
+    arguments: $(password)
